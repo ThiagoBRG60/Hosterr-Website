@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(249, 244, 232);
+  font-family: Lato, sans-serif;
+  padding: 0 140px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 140px;
+}
+.hamburguer-menu {
+  display: none;
+}
+.hamburguer-list {
+  display: none;
+}
+nav ul,
+.logo {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.logo p {
+  padding: 5px 10px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+  transform: translateX(15px);
+  background: linear-gradient(to right, rgb(234, 178, 81), rgb(234, 83, 116));
+}
+nav ul li a {
+  color: #2b2b2b;
+  margin-left: 30px;
+  text-decoration: none;
+  position: relative;
+}
+nav ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0%;
+  height: 4px;
+  background-color: #2b2b2b;
+  transition: 0.2s;
+}
+nav ul li a:hover::before {
+  width: 100%;
+  left: 0;
+}
+.login a {
+  text-decoration: none;
+}
+.login a:first-of-type {
+  color: #2b2b2b;
+  position: relative;
+}
+.login a:first-of-type::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0%;
+    height: 4px;
+    background-color: #2b2b2b;
+    transition: 0.2s;
+}
+.login a:first-of-type:hover::before {
+    width: 100%;
+    left: 0;
+}
+.login-button {
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 6px;
+  color: #fff;
+  margin-left: 20px;
+  background-color: rgb(73, 119, 234);
+  transition: 0.3s;
+}
+.login-button:hover {
+  background-color: rgb(41, 95, 231);
+}
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 90px;
+  padding: 140px 0;
+}
+.content-text h1 {
+  width: 600px;
+  font-size: 60px;
+  font-family: 'Playfair Display', sans-serif;
+}
+.subheading {
+  width: 500px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.content-text input {
+  width: 335px;
+  padding: 20px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  margin-top: 15px;
+}
+.checkmark-text {
+  display: flex;
+  gap: 15px;
+  position: relative;
+  margin-top: 20px;
+}
+.content-images {
+  margin-top: -40px;
+}
+.content-images img {
+  position: absolute;
+}
+#hero-image {
+  z-index: 4;
+}
+#purple-shape {
+  z-index: 3;
+  transform: rotate(-15deg);
+}
+#pink-shape {
+  z-index: 2;
+  transform: rotate(-30deg);
+}
+#blue-shape {
+  z-index: 1;
+  transform: rotate(-45deg);
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+footer ul a {
+  text-decoration: none;
+  color: #2b2b2b;
+  position: relative;
+}
+footer ul a::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0%;
+  height: 4px;
+  background-color: #2b2b2b;
+  transition: 0.2s;
+}
+footer ul a:hover::before {
+  width: 100%;
+  left: 0;
+}
+.questions-footer {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.questions-text p {
+  font-family: 'Playfair Display';
+  font-weight: 500;
+}
+.questions-text span {
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+}
+.questions-text span::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0%;
+  height: 4px;
+  background-color: #2b2b2b;
+  transition: 0.2s;
+}
+.questions-text span:hover::before {
+  width: 100%;
+  left: 0;
+}

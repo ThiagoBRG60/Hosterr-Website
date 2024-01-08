@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css">
+    <title>Hosterr Website</title>
+  </head>
+  <body>
+
+    <header>
+      <div class="logo">
+        <a href=""><img src="./Assets/Logo.svg" alt="logo image" /></a>
+        <p>Hosterr is hiring!</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="">Plans</a></li>
+          <li><a href="">Find Domain</a></li>
+          <li><a href="">Why Hosterr</a></li>
+        </ul>
+      </nav>
+      <div class="login">
+        <a href="">Sign in</a>
+        <a href="" class="login-button">Join Waitlist</a>
+      </div>
+      <div class="hamburguer-menu" id="hamburguer-menu" onclick="hamburguer()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="hamburguer-list" id="hamburguer-list">
+        <a href=""><p id="plans">Plans</p></a>
+        <a href=""><p id="location">Find Domain</p></a>
+        <a href=""><p id="hosterr">Why Hosterr</p></a>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="content-wrapper">
+          <div class="content-text">
+            <h1>Host your website in less than 5 minutes.</h1>
+            <p class="subheading">
+              With Hosterr, get your website up and running in no less than 5
+              minutes with the most competitive pricing packages available
+              online.
+            </p>
+            <input type="email" autocomplete="email" name="email" id="email" placeholder="Enter e-mail address">
+            <a href="" class="login-button">Join Waitlist</a>
+            <div class="checkmark-text">
+              <img src="./Assets/Checkmark.svg" alt="" width="20px">
+              <p>No spam, ever. Unsubscribe anytime.</p>
+            </div>
+          </div>
+          <div class="content-images">
+            <img src="./Assets/Hero Image (Model).png" alt="hero image" width="360px" id="hero-image">
+            <img src="./Assets/Purple Shape.svg" alt="" width="360px" id="purple-shape">
+            <img src="./Assets/Pink Shape.svg" alt="" width="360px" id="pink-shape">
+            <img src="./Assets/Blue Shape.svg" alt="" width="360px" id="blue-shape">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <ul>
+        <li><a href="">Facebook</a></li>
+        <li><a href="">Instagram</a></li>
+        <li><a href="">Twitter</a></li>
+      </ul>
+      <div class="questions-footer">
+        <img src="./Assets/Help Avatar.svg" alt="">
+        <div class="questions-text">
+          <p>Have any questions?</p>
+          <span>Talk to a specialist</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
